@@ -1,0 +1,20 @@
+parameters:
+    np_sitemaker.form.type.richeditor.class: NP\Bundle\SitemakerBundle\Form\Extension\Type\RichEditorType
+    np_sitemaker.form.type.image.class: NP\Bundle\SitemakerBundle\Form\Extension\Type\ImageType
+    np_sitemaker.event.subscriber.html_builder: NP\Bundle\SitemakerBundle\Entity\HtmlBuilderEventSubscriber
+
+services:
+    form.type.richeditor:
+        class: %np_sitemaker.form.type.richeditor.class%
+        tags:
+            - { name: form.type, alias: richeditor }
+    form.type.image:
+        class: %np_sitemaker.form.type.image.class%
+        tags:
+            - { name: form.type, alias: image }
+    event.subscriber.html_builder:
+        class: %np_sitemaker.event.subscriber.html_builder%
+        tags:
+            - { name: doctrine.event_subscriber }
+        arguments:
+            - @service_container

@@ -1,0 +1,10 @@
+{%extends "NPSitemakerBundle::layout.html.twig"%}
+{% block content %}
+	<h1>Site Liste</h1>
+	<ul>{% for site in sitelist %}
+		<li><a href="{{ path('np_sitemaker_site_edit', { 'id': site.id }) }}" >{{site.name}}</a> - 
+		    <a href="/{{ site.folder }}/" target="_blank">Aperçu</a></li>
+	{% endfor %}
+	</ul>
+	<a href="{{ path('np_sitemaker_site_new') }}" >Nouveau Site</a>
+{% endblock %}

@@ -1,0 +1,29 @@
+np_sitemaker_site_index:
+    pattern: /
+    defaults: { _controller: NPSitemakerBundle:Site:index }
+
+np_sitemaker_site_show:
+    pattern: /{id}/show
+    defaults: { _controller: NPSitemakerBundle:Site:show }
+    requirements:
+      id: \d+
+
+np_sitemaker_site_new:
+    pattern: /new
+    defaults: { _controller: NPSitemakerBundle:Site:new }
+
+np_sitemaker_site_edit:
+    pattern: /{id}/edit
+    defaults: { _controller: NPSitemakerBundle:Site:edit }
+    requirements:
+      id: \d+
+
+np_sitemaker_site_delete:
+    pattern: /{id}/delete
+    defaults: { _controller: NPSitemakerBundle:Site:delete }
+    requirements:
+      id: \d+
+
+np_sitemaker_site_groupprocess:
+    pattern: /groupprocess
+    defaults: { _controller: NPSitemakerBundle:Site:groupProcess }

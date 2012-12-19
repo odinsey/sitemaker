@@ -1,0 +1,268 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#333;
+    text-align:justify;
+    line-height:1.2;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.2em;
+}
+header, #wrapper, footer {
+    width: 981px;
+    margin: auto;
+}
+#site { /* ADMIN */
+    background: 
+        webkit-gradient(linear, left top, left bottom, color-stop(0px,##BG_SITE_1##), color-stop(60px,##BG_SITE_2##), color-stop(122px,##BG_SITE_1##), color-stop(122px,rgba(0,0,0,0))) no-repeat,
+        webkit-gradient(linear, left bottom, left top, color-stop(0px,##BG_SITE_1##), color-stop(60px,##BG_SITE_2##), color-stop(122px,##BG_SITE_1##), color-stop(122px,rgba(0,0,0,0))) no-repeat,
+        webkit-gradient(linear, left bottom, left top, color-stop(0%,#FFF), color-stop(100%,#c7c7c7)) no-repeat;
+    background: 
+        -moz-linear-gradient(bottom, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        -moz-linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        -moz-linear-gradient(top, #FFF 0%, #c7c7c7 100%) no-repeat;
+    background: 
+        -webkit-linear-gradient(bottom, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        -webkit-linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        -webkit-linear-gradient(top, #FFF 0%, #c7c7c7 100%) no-repeat;
+    background: 
+        linear-gradient(bottom, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        linear-gradient(top, #FFF 0%, #c7c7c7 100%) no-repeat;
+    background: 
+        -pie-linear-gradient(bottom, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        -pie-linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px, rgba(0,0,0,0) 122px) no-repeat,
+        -pie-linear-gradient(top, #FFF 0%, #c7c7c7 100%) no-repeat;
+    behavior: url(../css/pie.htc);
+}
+footer span {
+    background: webkit-gradient(linear, left bottom, left top, color-stop(0px,##BG_SITE_1##), color-stop(60px,##BG_SITE_2##), color-stop(122px,##BG_SITE_1##)) no-repeat;
+    background: -moz-linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px) no-repeat;
+    background: -webkit-linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px) no-repeat;
+    background: linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px) no-repeat;
+    background: -pie-linear-gradient(top, ##BG_SITE_1## 0px, ##BG_SITE_2## 60px, ##BG_SITE_1## 121px) no-repeat;
+    behavior: url(../css/pie.htc);
+}
+#bando {
+    position: absolute;
+    top: 293px;    
+    background: ##BANDO## repeat-x 0 294px;  /* ADMIN */
+    height: 50px;
+    width: 100%;
+    box-shadow: #999 2px 0 1px;
+}
+header {
+    position: relative;
+    height: 422px;
+    background: url(../images/##IMAGE_HEADER##) no-repeat center  55px;  /* ADMIN */
+    background-size: 981px auto;
+}
+footer {
+    position: relative;
+    z-index: 1;
+    height: 120px;
+}
+footer span {
+    position: relative;
+    z-index: 2;
+    font-size: 12px; 
+    line-height: 2em;
+    color: #5c5c5c;
+    background-color: #444;
+    text-align: center;
+    display: block;
+    width: 65%;
+    padding: 0 5%;
+    margin: auto;
+}
+footer:before {
+    content: '\0000a0';
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: ##BANDO##;  /* ADMIN */
+}
+#logo {
+    margin: 0 0 0 20px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 235px;
+    height: 121px;
+}
+#logo:before{
+    content: "\00a0";
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    z-index: -1;
+    display: block;
+    width: 235px;
+    height: 121px;
+    background: #242424;
+    transform: rotate(-3deg);
+    transform-origin: top right;
+    -moz-transform: rotate(-3deg);
+    -moz-transform-origin: top right;
+    -webkit-transform: rotate(-3deg);
+    -webkit-transform-origin: top right;
+    -ms-transform:  rotate(-3deg);
+    -ms-transform-origin: top right;
+}
+nav#top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 0;
+}
+header nav a {
+    font-family: 'Jura', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#baseline {
+    font-family: 'Jura', sans-serif;
+    font-size: 25px;    
+    line-height: 35px;
+    font-weight: 500;
+    color: #FFF;
+    padding: 10px 5% 0 45%;
+    text-align: right;
+    text-transform: uppercase;
+    background: url(../images/baseline.png) no-repeat right center;
+    height: 84px;
+}
+nav#top a {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    color: #9d9d9d;
+    font-weight: 500;
+    font-size: 13px;
+}
+nav#main {
+    position: absolute;
+    top: 293px;
+    height: 50px;
+    width: 100%;
+    background: url(../images/sur-menu.png) no-repeat center top, ##BANDO##;  /* ADMIN */    
+}
+nav#main a {    
+    font-weight: 400;
+    font-size: 18px;
+    display: inline-block;
+    width: 32%;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    border-left: 1px #999 solid;
+}
+nav#main a:hover {
+    text-shadow: #FFF 0 0 3px;
+}
+nav#main a:first-child {
+    border-left: none;
+}
+#wrapper { margin: 10px auto 25px; }
+#left {
+    float: left;
+    width: 213px;
+}
+#left nav {
+    padding: .5em 0;
+    background: -webkit-linear-gradient(top, ##BG_LEFT_1## 0%, ##BG_LEFT_2## 100%) no-repeat;    /* ADMIN */
+    background: webkit-gradient(top, ##BG_LEFT_1## 0%, ##BG_LEFT_2## 100%) no-repeat;   /* ADMIN */
+    background: -moz-linear-gradient(top, ##BG_LEFT_1## 0%, ##BG_LEFT_2## 100%) no-repeat;    /* ADMIN */
+    background: linear-gradient(top, ##BG_LEFT_1## 0%, ##BG_LEFT_2## 100%) no-repeat; /* ADMIN */
+    background: -pie-linear-gradient(top, ##BG_LEFT_1## 0%, ##BG_LEFT_2## 100%) no-repeat;   /* ADMIN */
+    behavior: url(../css/pie.htc); 
+}
+#left .title {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    line-height: 50px;
+    margin: .5em 0;
+    background: -webkit-linear-gradient(top, ##BANDO## 0, #555555 100%) no-repeat; /* ADMIN */
+    background: webkit-gradient(top, ##BANDO## 0, #555555 100%) no-repeat;   /* ADMIN */ 
+    background: -moz-linear-gradient(top, ##BANDO## 0, #555555 100%) no-repeat;   /* ADMIN */ 
+    background: linear-gradient(top, ##BANDO## 0, #555555 100%) no-repeat;    /* ADMIN */
+    background: -pie-linear-gradient(top, ##BANDO## 0, #555555 100%) no-repeat;   /* ADMIN */
+    behavior: url(../css/pie.htc); 
+}
+#left nav a {
+    display: block;
+    color: ##LINK_LEFT##; /* ADMIN */
+    padding: 0 2em;
+    line-height: 30px;
+    border: 1px #333 solid;
+    border-width: 1px 0 0 0;
+}
+#callback {
+    background: url(../images/call.png) no-repeat 0 0;
+    height: 176px;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+}
+#callback .call-us {
+    background-color: ##BANDO##; /* ADMIN */
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: .2em 0;
+    position: absolute;
+    top: 100px;
+    -moz-box-shadow: 0 2px 2px #555;
+    -webkit-box-shadow: 0 2px 2px #555;
+    box-shadow: 0 2px 2px #555;
+}
+#callback .em {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #9c9c9c;
+    display: block;
+    width: 98%;
+    margin: auto;
+    padding: .3em;
+    font-style: italic;
+    font-size: 10px;
+}
+a#the-who {
+    font-family: 'Jura', sans-serif;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: #5d5d5d;
+    background:#FFF;
+    border: 2px ##BANDO## solid; /* ADMIN */
+    border-width: 2px 0;
+}
+#center {
+    float: left;    
+    background: #FFF;
+    width: 710px;
+    margin-left: 27px;
+    padding: 21px 13px 21px 18px; 
+    min-height: 400px;
+}
+#center:after,
+#wrapper:after {
+    content: '\0000a0';
+    clear: both;
+    float: none;
+}

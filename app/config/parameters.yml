@@ -1,0 +1,23 @@
+parameters:
+#    database_driver:   pdo_mysql
+#    database_host:     localhost
+#    database_port:     ~
+#    database_name:     sitemaker
+#    database_user:     sitemaker
+#    database_password: ztQU6nFA4Ce9VaVZ
+
+    mailer_transport:  smtp
+    mailer_host:       localhost
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            fr
+    secret:            byNicolasPajonForAtelier45
+
+#parameters:
+    database_driver:   pdo_mysql
+    database_host:     mysql5-9.pro
+    database_port:     ~
+    database_name:     pajonprod
+    database_user:     pajonprod
+    database_password: Vn8BHdHE

@@ -1,0 +1,29 @@
+{% extends 'NPSitemakerBundle::layout.html.twig' %}
+
+{% form_theme form with ['NPSitemakerBundle:Form:fields.html.twig', 'NPSitemakerBundle:Form:collection.html.twig'] %}
+
+{% block content %}
+{% spaceless %}
+<section>
+    {% block new_form_title %}
+	<div class="section-header">
+	    <h2>{{ ( translation_prefix ~ '.new.title' )|trans([], bundle_name) }}</h2>
+	</div>
+    {% endblock %}
+	<form class="form-horizontal" action="{{ path(route_form_action) }}" method="post" {{ form_enctype(form) }} >
+		{% block new_form %}
+		    {{ form_widget(form) }}
+		{% endblock %}
+        {% block new_form_actions %}
+		<div class="form-actions">
+            {% block new_form_actions_list %}
+			<input type="submit" class="btn btn-primary" value="{{ 'global.form_action.save'|trans([], 'NPSitemakerBundle') }}" >&nbsp;
+			<input type="submit" class="btn btn-primary" name="save_and_add" value="{{ 'global.form_action.save_and_add'|trans([], 'NPSitemakerBundle') }}">&nbsp;
+			<a class="btn" href="{{ path(route_index) }}">{{ 'global.form_action.back_to_list'|trans([], 'NPSitemakerBundle') }}</a>
+            {% endblock %}
+		    </div>
+        {% endblock %}
+		</form>
+	    </section>
+{% endspaceless %}
+{% endblock %}
